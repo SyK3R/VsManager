@@ -10,6 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      - name: Grant execute permission
+        run: chmod +x gradlew          ← COLOCA AQUI PRIMEIRO!
+      
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
